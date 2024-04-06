@@ -16,32 +16,37 @@
 
 <body>
     <header>
-        <h1 style="text-align: center; padding: 1rem; font-family: Helvetica, Arial,sans-serif; font-weight: 700; letter-spacing: 2px; border-bottom: 0.5px solid rgba(158, 156, 156, 0.5); text-Shadow: 2px 2px 4px rgba(0,0,0,0.3)">STUDENT DROPOUT ANALYSIS</h1>
+        <h1
+            style="text-align: center; padding: 1rem; font-family: Helvetica, Arial,sans-serif; font-weight: 700; letter-spacing: 2px; border-bottom: 0.5px solid rgba(158, 156, 156, 0.5); text-Shadow: 2px 2px 4px rgba(0,0,0,0.3)">
+            STUDENT DROPOUT ANALYSIS</h1>
         <nav>
             <div class="navbar">
                 <a href="index.html" class="nav-link hvrcenter">
                     <i class="fas fa-home"></i><br>
                     <span class="link-name">Home</span>
                 </a>
-                <a href="#" class="nav-link hvrcenter">
+                <a href="RegionWiseData.html" class="nav-link hvrcenter">
                     <i class="fa-solid fa-tachograph-digital"></i><br>
                     <span class="link-name">DashBoard</span>
                 </a>
-                <a href="#" class="nav-link hvrcenter">
+                <a href="https://dropout-ratio.vercel.app/" class="nav-link hvrcenter">
                     <i class="fa-solid fa-chart-simple"></i><br>
                     <span class="link-name">Analysis</span>
                 </a>
-               
-                <div class="dropdown" >
-                    <button class="btn bg-gradient-info dropdown-toggle nav-link hvrcenter" type="button" id="dropdownMenuButtonnav" data-bs-toggle="dropdown" aria-expanded="false">
+
+                <div class="dropdown">
+                    <button class="btn bg-gradient-info dropdown-toggle nav-link hvrcenter" type="button"
+                        id="dropdownMenuButtonnav" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fa-solid fa-download"></i><br> Download
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                      <li><a class="dropdown-item" href="#">Get Report PDF</a></li>
-                      <hr>
-                      <li><a class="dropdown-item" href="Hackathon_data.xlsx" download>Get Data CSV</a></li>
+                        <li><a class="dropdown-item" href="#">Get Report PDF</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="data_csv.csv" download>Get Data CSV</a></li>
+                        <hr>
+                        <li><a class="dropdown-item" href="Hackathon_data.xlsx" download>Get Data Spreadsheet</a></li>
                     </ul>
-                  </div>
+                </div>
             </div>
         </nav>
 
@@ -50,7 +55,8 @@
 
     <main>
         <div class="main-header">
-            <h3 style="font-weight: 600; font-size: 2rem; text-Shadow: 2px 2px 4px rgba(0,0,0,0.3)">School Education Data Dashboard</h3>
+            <h3 style="font-weight: 600; font-size: 2rem; text-Shadow: 2px 2px 4px rgba(0,0,0,0.3)">School Education
+                Data Dashboard</h3>
             <div class="state-selector">
                 <p>Select States/UTs:</p>
                 <div class="dropdown">
@@ -60,42 +66,69 @@
                     </button>
                     <ul class="dropdown-menu" style="height: 70vh; overflow: scroll; scrollbar-width: thin;">
                         <!-- <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">National</a></li> -->
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Andaman & Nicobar Islands</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Andhra Pradesh</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Arunachal Pradesh</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Andaman &
+                                Nicobar Islands</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Andhra
+                                Pradesh</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Arunachal
+                                Pradesh</a></li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Assam</a></li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Bihar</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Chandigarh</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Chhattisgarh</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Dadra & Nagar Haveli and Daman & Diu</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Chandigarh</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states"
+                                href="#">Chhattisgarh</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Dadra & Nagar
+                                Haveli and Daman & Diu</a></li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Delhi</a></li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Goa</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Gujarat</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Haryana</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Himachal Pradesh</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Jammu & Kashmir</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Jharkhand</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Karnataka</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Gujarat</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Haryana</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Himachal
+                                Pradesh</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Jammu &
+                                Kashmir</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Jharkhand</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Karnataka</a>
+                        </li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Kerala</a></li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Ladakh</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Lakshadweep</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Madhya Pradesh</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Maharashtra</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Manipur</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Meghalaya</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Mizoram</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Nagaland</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Lakshadweep</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Madhya
+                                Pradesh</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Maharashtra</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Manipur</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Meghalaya</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Mizoram</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Nagaland</a>
+                        </li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Odisha</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Puducherry</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Puducherry</a>
+                        </li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Punjab</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Rajasthan</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Rajasthan</a>
+                        </li>
                         <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Sikkim</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Tamilnadu</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Telangana</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Tripura</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Uttarakhand</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Uttar Pradesh</a></li>
-                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">West Bengal</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Tamilnadu</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Telangana</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Tripura</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Uttarakhand</a>
+                        </li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">Uttar
+                                Pradesh</a></li>
+                        <li style="width: 350px;"><a class="dropdown-item dropdown-item-states" href="#">West Bengal</a>
+                        </li>
 
                     </ul>
                 </div>
@@ -131,7 +164,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="enrprim">----</p>
                         </span>
                     </div>
@@ -143,7 +176,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="enrupprim">----</p>
                         </span>
                     </div>
@@ -155,7 +188,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="enrsec">----</p>
                         </span>
                     </div>
@@ -173,7 +206,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="schlurban">----</p>
                         </span>
                     </div>
@@ -185,7 +218,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="schlrural">----</p>
                         </span>
                     </div>
@@ -197,7 +230,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="schloverall">----</p>
                         </span>
                     </div>
@@ -235,7 +268,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="litrate">----</p>
                         </span>
                     </div>
@@ -247,7 +280,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="pci">----</p>
                         </span>
                     </div>
@@ -255,31 +288,31 @@
 
             </div>
 
-                <div class="card-3">
+            <div class="card-3">
 
-                    <div class="card">
-                        <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
-                        <h5>Life Expectency For Boys</h5>
-                        <div class="card-bar"></div>
-                        <div class="data">
-                            <span>
-                                <p class="stats" id="lifegirl">----</p>
-                            </span>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
-                        <h5>Life Expectency For Girls</h5>
-                        <div class="card-bar"></div>
-                        <div class="data">
-                            <span>
-                                
-                                <p class="stats" id="lifeboy">----</p>
-                            </span>
-                        </div>
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-hand-holding-dollar"></i></div>
+                    <h5>Life Expectency For Boys</h5>
+                    <div class="card-bar"></div>
+                    <div class="data">
+                        <span>
+                            <p class="stats" id="lifegirl">----</p>
+                        </span>
                     </div>
                 </div>
+
+                <div class="card">
+                    <div class="card-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                    <h5>Life Expectency For Girls</h5>
+                    <div class="card-bar"></div>
+                    <div class="data">
+                        <span>
+
+                            <p class="stats" id="lifeboy">----</p>
+                        </span>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -292,7 +325,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="teacprim">----</p>
                         </span>
                     </div>
@@ -304,7 +337,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="studprim">----</p>
                         </span>
                     </div>
@@ -316,7 +349,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="ptrprim">----</p>
                         </span>
                     </div>
@@ -330,7 +363,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="teacupprim">----</p>
                         </span>
                     </div>
@@ -342,7 +375,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="studupprim">----</p>
                         </span>
                     </div>
@@ -354,7 +387,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="ptrupprim">----</p>
                         </span>
                     </div>
@@ -368,7 +401,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="teacsec">----</p>
                         </span>
                     </div>
@@ -380,7 +413,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="studsec">----</p>
                         </span>
                     </div>
@@ -392,7 +425,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="ptrsec">----</p>
                         </span>
                     </div>
@@ -406,7 +439,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="teacovl">----</p>
                         </span>
                     </div>
@@ -418,7 +451,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="studovl">----</p>
                         </span>
                     </div>
@@ -430,7 +463,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="ptrovl">----</p>
                         </span>
                     </div>
@@ -448,7 +481,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="gpiprim">----</p>
                         </span>
                     </div>
@@ -460,7 +493,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="gpiupprim">----</p>
                         </span>
                     </div>
@@ -472,7 +505,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="gpisec">----</p>
                         </span>
                     </div>
@@ -486,7 +519,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="hdi">----</p>
                         </span>
                     </div>
@@ -505,7 +538,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropgirlprim">----</p>
                         </span>
                     </div>
@@ -517,7 +550,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropboyprim">----</p>
                         </span>
                     </div>
@@ -529,7 +562,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropovlprim">----</p>
                         </span>
                     </div>
@@ -543,7 +576,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropgirlupprim">----</p>
                         </span>
                     </div>
@@ -555,7 +588,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropboyupprim">----</p>
                         </span>
                     </div>
@@ -567,7 +600,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropovlupprim">----</p>
                         </span>
                     </div>
@@ -581,7 +614,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropgirlsec">----</p>
                         </span>
                     </div>
@@ -593,7 +626,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropboysec">----</p>
                         </span>
                     </div>
@@ -605,7 +638,7 @@
                     <div class="card-bar"></div>
                     <div class="data">
                         <span>
-                            
+
                             <p class="stats" id="dropovlsec">----</p>
                         </span>
                     </div>
@@ -615,10 +648,10 @@
 
     </main>
     <footer style="height: 5rem;">
-        <!-- <hr> -->
-        
-        <div class="copy" >
-            <div>&copy;2023 agrocult.com | All Rights Reserved</div>
+        <hr>
+
+        <div class="copy">
+            <div>&copy;2024 StudentDropoutAnalysis | All Rights Reserved</div>
             <div>** All data is for the period 2021-2022</div>
         </div>
     </footer>
