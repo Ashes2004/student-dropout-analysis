@@ -39,7 +39,7 @@ dropdownItems.forEach(item => {
 
 
 function change_data(state){
-    fetch(`https://dropout-ratio-api-sobhanbose.koyeb.app/getData/byRegion?region=${state}`)
+    fetch(`https://dropout-ratio-api.onrender.com/getData/byRegion?region=${state}`)
     .then(response => response.json())
     .then(data => {
         console.log(data);
